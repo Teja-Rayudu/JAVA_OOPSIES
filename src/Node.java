@@ -5,4 +5,8 @@ public class Node {
         this.data = data;
         next = null;
     }
+
+    public static void main(String[] args) {
+
+    }
 }

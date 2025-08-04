@@ -13,20 +13,22 @@ public class BST {
         return root;
     }
 
-    static void display(Tnode root){
-        if(root == null) return;
-        Queue<Tnode> q = new LinkedList<>();
-        q.add(root);
-
-        while (!q.isEmpty()){
-            int size = q.size();
-            for(int i = 0; i < size; i++){
-                Tnode n = q.poll();
-                System.out.print(n.data + " ");
-                if(n.left != null) q.add(n.left);
-                if(n.right != null) q.add(n.right);
+    private static void display(Tnode root){
+        if(root != null) {
+            Queue<Tnode> q = new LinkedList<>();
+            q.add(root);
+            while (!q.isEmpty()){
+                int size = q.size();
+                for(int i = 0; i < size; i++){
+                    Tnode n = q.poll();
+                    assert n != null;
+                    System.out.print(n.data + " ");
+                    if(n.left != null) q.add(n.left);
+                    if(n.right != null) q.add(n.right);
+                }
             }
         }
+
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
