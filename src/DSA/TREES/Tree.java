@@ -1,9 +1,11 @@
+package DSA.TREES;
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
 public class Tree {
-    static Tnode buildTree(String[] s){
+    public static Tnode buildTree(String[] s){
         if(s.length == 0 || s[0].equals("null")) return null;
         Queue<Tnode> q = new LinkedList<>();
         Tnode root = new Tnode(Integer.parseInt(s[0]));
