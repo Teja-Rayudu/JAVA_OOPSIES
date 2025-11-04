@@ -11,6 +11,22 @@ build/
 target/
 *.class
 
+# Gradle/Maven
+.gradle/
+/.gradle/
+/mvnw
+/mvnw.cmd
+/.mvn/
+
+# Eclipse/NetBeans
+.classpath
+.project
+.settings/
+.factorypath
+
+# VS Code
+.vscode/
+
 # OS
 .DS_Store
 Thumbs.db
@@ -23,3 +39,12 @@ Thumbs.db
 
 # JetBrains / Copilot temporary
 .autocp
+
+# Dependency directories
+node_modules/
+
+# IDE and editor backups
+*~
+*.swp
+
+# End of file
