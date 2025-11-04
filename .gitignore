@@ -2,6 +2,9 @@
 *.iml
 .idea/
 
+# Project iml
+JAVA_OOPSIES.iml
+
 # Build / output
 out/
 build/
@@ -18,3 +21,5 @@ Thumbs.db
 # temporary
 *.tmp
 
+# JetBrains / Copilot temporary
+.autocp
